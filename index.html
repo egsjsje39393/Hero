@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Premium Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <main class="app-shell">
+      <aside class="sidebar">
+        <section class="hero-card">
+          <img class="hero-image" src="assets/avatar.png" alt="Anime portrait" />
+          <div class="hero-glitch hero-glitch-a"></div>
+          <div class="hero-glitch hero-glitch-b"></div>
+          <div class="help-dot">?</div>
+        </section>
+
+        <nav class="nav-list" aria-label="Menu sections">
+          <button class="nav-item active" data-tab="esp">
+            <span class="icon premium-icon crosshair"></span>
+            <span>ESP</span>
+          </button>
+          <button class="nav-item" data-tab="aimbot">
+            <span class="icon premium-icon target"></span>
+            <span>AIM-BOT</span>
+          </button>
+          <button class="nav-item" data-tab="config">
+            <span class="icon premium-icon folder"></span>
+            <span>CONFIG</span>
+          </button>
+          <button class="nav-item" data-tab="misc">
+            <span class="icon premium-icon mask"></span>
+            <span>MISC</span>
+          </button>
+          <button class="nav-item" data-tab="setting">
+            <span class="icon premium-icon gear"></span>
+            <span>SETTING</span>
+          </button>
+        </nav>
+
+        <section class="status-card">
+          <div class="status-row">
+            <span class="mini-icon user"></span>
+            <span>User:</span>
+            <strong>Player</strong>
+          </div>
+          <div class="status-row">
+            <span class="mini-icon monitor"></span>
+            <span>FPS:</span>
+            <strong>144</strong>
+          </div>
+        </section>
+      </aside>
+
+      <section class="window">
+        <div class="window-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Close"></button>
+        </div>
+
+        <section class="panel tab-panel active" id="esp" aria-label="ESP">
+          <header class="panel-title">
+            <h1>ESP</h1>
+            <span></span>
+          </header>
+          <div class="esp-grid">
+            <article class="group split-right">
+              <h2>PLAYERS</h2>
+              <div class="line"></div>
+              <div class="control-row">
+                <span>Enable ESP</span>
+                <label class="switch"><input type="checkbox" checked /><span></span></label>
+              </div>
+              <div class="control-row">
+                <span>Box</span>
+                <div class="end-stack">
+                  <label class="switch"><input type="checkbox" checked /><span></span></label>
+                  <button class="color-swatch white"></button>
+                </div>
+              </div>
+              <div class="control-row">
+                <span>Skeleton</span>
+                <div class="end-stack">
+                  <label class="switch"><input type="checkbox" checked /><span></span></label>
+                  <button class="color-swatch white"></button>
+                </div>
+              </div>
+              <div class="control-row">
+                <span>Health Bar</span>
+                <div class="end-stack">
+                  <label class="switch"><input type="checkbox" checked /><span></span></label>
+                  <button class="color-swatch green"></button>
+                </div>
+              </div>
+              <div class="control-row">
+                <span>Name</span>
+                <div class="end-stack">
+                  <label class="switch"><input type="checkbox" checked /><span></span></label>
+                  <button class="color-swatch white"></button>
+                </div>
+              </div>
+              <div class="control-row">
+                <span>Distance</span>
+                <div class="end-stack">
+                  <label class="switch"><input type="checkbox" checked /><span></span></label>
+                  <button class="color-swatch white"></button>
+                </div>
+              </div>
+              <div class="control-row">
+                <span>Weapon</span>
+                <label class="switch"><input type="checkbox" /><span></span></label>
+              </div>
+            </article>
+
+            <article class="group split-right">
+              <h2>WORLD</h2>
+              <div class="line"></div>
+              <div class="control-row">
+                <span>Enable ESP</span>
+                <label class="switch"><input type="checkbox" checked /><span></span></label>
+              </div>
+              <div class="control-row">
+                <span>Loot</span>
+                <div class="end-stack">
+                  <label class="switch"><input type="checkbox" checked /><span></span></label>
+                  <button class="color-swatch white"></button>
+                </div>
+              </div>
+              <div class="control-row">
+                <span>Vehicles</span>
+                <div class="end-stack">
+                  <label class="switch"><input type="checkbox" checked /><span></span></label>
+                  <button class="color-swatch white"></button>
+                </div>
+              </div>
+              <div class="control-row">
+                <span>Supply Drops</span>
+                <div class="end-stack">
+                  <label class="switch"><input type="checkbox" checked /><span></span></label>
+                  <button class="color-swatch purple"></button>
+                </div>
+              </div>
+              <div class="control-row">
+                <span>Explosives</span>
+                <label class="switch"><input type="checkbox" /><span></span></label>
+              </div>
+              <div class="control-row">
+                <span>Traps</span>
+                <label class="switch"><input type="checkbox" /><span></span></label>
+              </div>
+            </article>
+
+            <article class="group">
+              <h2>VISUALS</h2>
+              <div class="line"></div>
+              <div class="control-row">
+                <span>Visible Check</span>
+                <label class="switch"><input type="checkbox" checked /><span></span></label>
+              </div>
+              <div class="control-row">
+                <span>Glow</span>
+                <div class="end-stack">
+                  <label class="switch"><input type="checkbox" checked /><span></span></label>
+                  <button class="color-swatch white"></button>
+                </div>
+              </div>
+              <label class="slider-control wide">
+                <span>Glow Intensity</span>
+                <strong>1.0</strong>
+                <input type="range" min="0" max="2" value="1" step="0.1" />
+              </label>
+              <div class="control-row">
+                <span>FOV Circle</span>
+                <label class="switch"><input type="checkbox" /><span></span></label>
+              </div>
+              <label class="slider-control inline">
+                <span>FOV Radius</span>
+                <strong>150.0</strong>
+                <input type="range" min="0" max="250" value="150" />
+              </label>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel tab-panel" id="aimbot" aria-label="AIM-BOT">
+          <header class="panel-title">
+            <h1>AIM-BOT</h1>
+            <span></span>
+          </header>
+          <div class="aim-grid">
+            <article class="group split-right">
+              <h2>GENERAL</h2>
+              <div class="line"></div>
+              <div class="control-row">
+                <span>Enable AimBot</span>
+                <label class="switch"><input type="checkbox" checked /><span></span></label>
+              </div>
+              <label class="select-control">
+                <span>Target</span>
+                <select><option>FOV</option><option>Distance</option></select>
+              </label>
+              <label class="select-control">
+                <span>Hitbox</span>
+                <select><option>Head</option><option>Chest</option><option>Nearest</option></select>
+              </label>
+              <label class="slider-control inline">
+                <span>Smooth</span>
+                <strong>5.0</strong>
+                <input type="range" min="0" max="10" value="5" />
+              </label>
+              <label class="slider-control inline">
+                <span>FOV</span>
+                <strong>150.0</strong>
+                <input type="range" min="0" max="250" value="150" />
+              </label>
+              <div class="control-row">
+                <span>Silent Aim</span>
+                <label class="switch"><input type="checkbox" checked /><span></span></label>
+              </div>
+              <div class="control-row">
+                <span>Visible Check</span>
+                <label class="switch"><input type="checkbox" checked /><span></span></label>
+              </div>
+              <div class="control-row">
+                <span>Auto Shoot</span>
+                <label class="switch"><input type="checkbox" /><span></span></label>
+              </div>
+              <label class="select-control">
+                <span>Key Bind</span>
+                <select><option>RMB</option><option>SHIFT</option><option>ALT</option></select>
+              </label>
+            </article>
+
+            <article class="group">
+              <h2>TARGET</h2>
+              <div class="line"></div>
+              <div class="control-row">
+                <span>Team Check</span>
+                <label class="switch"><input type="checkbox" /><span></span></label>
+              </div>
+              <div class="control-row">
+                <span>Health Check</span>
+                <label class="switch"><input type="checkbox" /><span></span></label>
+              </div>
+              <div class="control-row">
+                <span>Knocked Check</span>
+                <label class="switch"><input type="checkbox" checked /><span></span></label>
+              </div>
+              <label class="select-control">
+                <span>Priority</span>
+                <select><option>Closest Distance</option><option>Lowest Health</option></select>
+              </label>
+              <h2 class="subhead">EXTRA</h2>
+              <div class="line"></div>
+              <label class="slider-control inline">
+                <span>Prediction</span>
+                <strong>1.0</strong>
+                <input type="range" min="0" max="2" value="1" step="0.1" />
+              </label>
+              <div class="control-row">
+                <span>Recoil Control</span>
+                <label class="switch"><input type="checkbox" checked /><span></span></label>
+              </div>
+              <div class="control-row">
+                <span>Auto Wall</span>
+                <label class="switch"><input type="checkbox" /><span></span></label>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel tab-panel" id="config" aria-label="CONFIG">
+          <header class="panel-title">
+            <h1>CONFIG</h1>
+            <span></span>
+          </header>
+          <div class="config-grid">
+            <article class="config-card">
+              <h2>CONFIG LIST</h2>
+              <div class="config-list">
+                <button class="config-item active">
+                  <span class="doc-icon"></span>
+                  <span>default.cfg</span>
+                  <span class="star-icon"></span>
+                </button>
+                <button class="config-item">
+                  <span class="doc-icon"></span>
+                  <span>legit.cfg</span>
+                  <span class="star-icon"></span>
+                </button>
+                <button class="config-item">
+                  <span class="doc-icon"></span>
+                  <span>rage.cfg</span>
+                  <span class="star-icon"></span>
+                </button>
+                <button class="config-item">
+                  <span class="doc-icon"></span>
+                  <span>hvH.cfg</span>
+                  <span class="star-icon"></span>
+                </button>
+                <button class="config-item">
+                  <span class="doc-icon"></span>
+                  <span>visuals.cfg</span>
+                  <span class="star-icon"></span>
+                </button>
+                <button class="config-item">
+                  <span class="doc-icon"></span>
+                  <span>semi.cfg</span>
+                  <span class="star-icon"></span>
+                </button>
+              </div>
+              <div class="config-bottom">
+                <button class="action-btn accent"><span class="plus-icon"></span>NEW CONFIG</button>
+                <button class="action-btn muted"><span class="trash-icon"></span>DELETE</button>
+              </div>
+            </article>
+
+            <article class="config-card">
+              <h2>CONFIG ACTIONS</h2>
+              <div class="action-grid">
+                <button class="action-btn accent"><span class="save-icon"></span>SAVE CONFIG</button>
+                <button class="action-btn"><span class="load-icon"></span>LOAD CONFIG</button>
+                <button class="action-btn"><span class="upload-icon"></span>EXPORT CONFIG</button>
+                <button class="action-btn"><span class="download-icon"></span>IMPORT CONFIG</button>
+              </div>
+              <div class="divider"></div>
+              <h2>CONFIG INFO</h2>
+              <label class="field">
+                <span>Config Name</span>
+                <input value="default.cfg" />
+              </label>
+              <div class="date-grid">
+                <p><span>Created</span><strong>25.05.2024&nbsp;&nbsp;&nbsp;15:28</strong></p>
+                <p><span>Last Modified</span><strong>25.05.2024&nbsp;&nbsp;&nbsp;15:28</strong></p>
+              </div>
+              <label class="field">
+                <span>Description</span>
+                <textarea>Default configuration</textarea>
+              </label>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel tab-panel" id="misc" aria-label="MISC">
+          <header class="panel-title">
+            <h1>MISC</h1>
+            <span></span>
+          </header>
+          <div class="misc-grid">
+            <article class="box-card">
+              <h2>MAIN</h2>
+              <div class="compact-row"><span>Bunny Hop</span><label class="switch"><input type="checkbox" checked /><span></span></label></div>
+              <div class="compact-row"><span>Auto Strafer</span><label class="switch"><input type="checkbox" checked /><span></span></label></div>
+              <div class="compact-row"><span>Auto Crouch</span><label class="switch"><input type="checkbox" /><span></span></label></div>
+              <div class="compact-row"><span>Fast Stop</span><label class="switch"><input type="checkbox" checked /><span></span></label></div>
+              <div class="compact-row"><span>Auto Pistol</span><label class="switch"><input type="checkbox" /><span></span></label></div>
+              <div class="compact-row"><span>Edge Jump</span><label class="switch"><input type="checkbox" checked /><span></span></label></div>
+              <div class="compact-row"><span>Air Stuck</span><label class="switch"><input type="checkbox" /><span></span></label></div>
+            </article>
+
+            <article class="box-card">
+              <h2>VIEW</h2>
+              <div class="compact-row"><span>FOV Changer</span><label class="switch"><input type="checkbox" checked /><span></span></label></div>
+              <label class="slider-control inline"><span>FOV Value</span><strong>120.0</strong><input type="range" min="60" max="140" value="120" /></label>
+              <div class="compact-row"><span>Viewmodel FOV</span><label class="switch"><input type="checkbox" checked /><span></span></label></div>
+              <label class="slider-control inline"><span>Viewmodel Offset X</span><strong>2.0</strong><input type="range" min="-5" max="5" value="2" /></label>
+              <label class="slider-control inline"><span>Viewmodel Offset Y</span><strong>-2.0</strong><input type="range" min="-5" max="5" value="-2" /></label>
+              <label class="slider-control inline"><span>Viewmodel Offset Z</span><strong>-2.0</strong><input type="range" min="-5" max="5" value="-2" /></label>
+            </article>
+
+            <article class="box-card">
+              <h2>VISUALS</h2>
+              <div class="compact-row"><span>Crosshair</span><label class="switch"><input type="checkbox" checked /><span></span></label></div>
+              <div class="compact-row"><span>Hitmarker</span><label class="switch"><input type="checkbox" checked /><span></span></label></div>
+              <label class="select-control compact"><span>Bullet Tracers</span><select><option>Both</option><option>Local</option><option>Enemy</option></select></label>
+              <div class="compact-row"><span>Tracer Color</span><button class="color-swatch purple large"></button></div>
+              <label class="select-control compact"><span>Hitmarker Sound</span><select><option>Default</option><option>Metal</option></select></label>
+              <label class="slider-control inline"><span>Hitmarker Volume</span><strong>1.00</strong><input type="range" min="0" max="1" value="1" step="0.01" /></label>
+            </article>
+
+            <article class="box-card">
+              <h2>MOVEMENT</h2>
+              <div class="compact-row"><span>Speed Hack</span><label class="switch"><input type="checkbox" checked /><span></span></label></div>
+              <label class="slider-control inline"><span>Speed Value</span><strong>1.50</strong><input type="range" min="0" max="3" value="1.5" step="0.1" /></label>
+              <div class="compact-row"><span>Air Speed</span><label class="switch"><input type="checkbox" checked /><span></span></label></div>
+              <label class="slider-control inline"><span>Air Speed Value</span><strong>1.20</strong><input type="range" min="0" max="3" value="1.2" step="0.1" /></label>
+              <div class="compact-row"><span>No Slow Down</span><label class="switch"><input type="checkbox" /><span></span></label></div>
+            </article>
+
+            <article class="box-card">
+              <h2>OTHER</h2>
+              <div class="compact-row"><span>No Recoil</span><label class="switch"><input type="checkbox" checked /><span></span></label></div>
+              <div class="compact-row"><span>No Spread</span><label class="switch"><input type="checkbox" checked /><span></span></label></div>
+              <div class="compact-row"><span>Quick Duck</span><label class="switch"><input type="checkbox" checked /><span></span></label></div>
+              <div class="compact-row"><span>Auto Accept</span><label class="switch"><input type="checkbox" /><span></span></label></div>
+              <div class="compact-row"><span>Anti AFK</span><label class="switch"><input type="checkbox" /><span></span></label></div>
+            </article>
+
+            <article class="box-card">
+              <h2>WORLD</h2>
+              <div class="compact-row"><span>Third Person</span><label class="switch"><input type="checkbox" /><span></span></label></div>
+              <label class="select-control compact"><span>Third Person Key</span><select><option>NONE</option><option>V</option><option>ALT</option></select></label>
+              <div class="compact-row"><span>Remove Smoke</span><label class="switch"><input type="checkbox" checked /><span></span></label></div>
+              <div class="compact-row"><span>Remove Flash</span><label class="switch"><input type="checkbox" checked /><span></span></label></div>
+              <div class="compact-row"><span>Night Mode</span><label class="switch"><input type="checkbox" /><span></span></label></div>
+              <div class="compact-row"><span>Sky Color</span><button class="color-swatch purple large"></button></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel tab-panel" id="setting" aria-label="SETTING">
+          <header class="panel-title">
+            <h1>SETTING</h1>
+            <span></span>
+          </header>
+          <div class="settings-grid">
+            <article class="box-card">
+              <h2>INTERFACE</h2>
+              <label class="slider-control inline"><span>Menu Scale</span><strong>1.00</strong><input type="range" min="0.75" max="1.25" value="1" step="0.01" /></label>
+              <label class="slider-control inline"><span>Opacity</span><strong>0.94</strong><input type="range" min="0.4" max="1" value="0.94" step="0.01" /></label>
+              <div class="compact-row"><span>Bloom</span><label class="switch"><input type="checkbox" checked /><span></span></label></div>
+              <div class="compact-row"><span>Particles</span><label class="switch"><input type="checkbox" checked /><span></span></label></div>
+            </article>
+            <article class="box-card">
+              <h2>ACCOUNT</h2>
+              <div class="profile-box">
+                <img src="assets/avatar.png" alt="" />
+                <div><strong>Player</strong><span>Premium lifetime</span></div>
+              </div>
+              <button class="action-btn accent full">SYNC PROFILE</button>
+              <button class="action-btn full">RESET UI</button>
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
